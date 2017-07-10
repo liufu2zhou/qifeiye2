@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>套餐价格 | 自助建站 - 起飞页</title>
+		<link rel="icon" type="image/png" href="img/qifei.png"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/qifei.css"/>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/qifei.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<style type="text/css">		
+		.packageHeader{
+			position: relative;
+			z-index: 50;
+			overflow: hidden;
+			background-image: url(img/package-header.jpg);
+			background-size: 100% auto;
+			background-repeat: no-repeat;		
+		}
+		.packageCover{
+			position: absolute;
+			z-index: 70;
+			background-color: #333333;
+			opacity: 0.7;
+			width: 100%;
+			height: 100%;			
+		}
+		.packageHeaderText{
+			/*border: 1px solid red ;*/
+			color: #FFFFFF;
+			position: relative;
+			z-index: 100;
+			text-align: center;
+			padding: 80px 45px;	
+		}
+		.package-h-ul li{
+			padding-left: 45px;
+			padding-right: 30px;
+			display: inline-block;
+		}
+		.package-h-ul>li+li{
+			border-left: 1px solid #ADADAD;
+		}
+		.package-h-ul li>a{
+			color: #FFFFFF;
+			font-size: 15px;
+		}
+		.packageHeaderText p{
+			font-size: 16px;
+			padding-top:15px;
+		}
+		@media (max-width: 769px) {
+			.packageHeaderText h1{
+				font-size: 1.4em;
+			}
+			.packageHeaderText p{
+				line-height: 25px;
+				font-size: 0.8em;
+			}
+			.packageHeader{
+				background-size: 100% 125%;
+			}
+			.packageHeaderText{
+				padding: 5% 5% 0px 5%;	
+			}
+		}
+	</style>
+	<body>
+		<div class="slideHMenuBox">
+			<div class="slideHMenuClose"><span style="color: #FFFFFF;" class="glyphicon glyphicon-remove"></span></div>
+			<div class="slideHMenuUl">
+				<ul >
+					<li><a href="index.html">首页</a></li>				    	
+			    	<li><a href="template.html">模板</a></li>
+			    	<li><a href="package.html">套餐</a></li>
+			    	<li><a href="case.html">案例</a></li>
+			    	<li><a href="" id="doc">文档</a></li>
+			    	<li><a href="" id="abo">关于</a></li>		
+				</ul>
+			</div>
+		</div>
+		
+		<div class="slideHMenuUlSecond1">
+			<ul>
+				<li><a href="" id="goBack1">返回上一级</a></li>				    	
+		    	<li><a href="template.html">教程中心</a></li>
+		    	<li><a href="package.html">建站资讯</a></li>
+		    	<li><a href="case.html">更新日志</a></li>
+			</ul>
+		</div>
+		
+		<div class="slideHMenuUlSecond2">
+			<ul>
+				<li><a href="" id="goBack2">返回上一级</a></li>				    	
+		    	<li><a href="template.html">公司信息</a></li>
+		    	<li><a href="package.html">荣誉资质</a></li>
+		    	<li><a href="case.html">联系客服</a></li>
+			</ul>
+		</div>
+		
+		<header >
+			<nav>
+				<div class="navBox">
+					<div class="navBrand ">
+						<img src="img/logo.png" width="102px" height="33px"/>
+					</div>
+					<div class="navCenter smallHide">
+						<ul class="">
+							<li><a href="index.html">首页</a></li>				    	
+					    	<li><a href="template.html">模板</a></li>
+					    	<li><a href="package.html">套餐</a></li>
+					    	<li><a href="case.html">案例</a></li>
+					    	<li><a href="#" class="doc">文档</a></li>
+					    	<li><a href="#" class="abo">关于</a></li>		
+						</ul>
+					</div>
+					<div class="navbarRight smallHide">
+						<ul class="">
+							<li><a href="login.html" id="login">登录</a></li>
+					    	<li><a href="register.html" id="regis">注册</a></li>
+						</ul>
+					</div>									
+				</div>
+				<div class="justifyDiv smallShow">
+					<span id="justifySpan" class="glyphicon glyphicon-align-justify "></span>
+				</div>	
+			</nav>
+			
+			<div class="packageHeader">
+				<div class="packageCover"></div>
+				<div class="packageHeaderText">
+					<h1>免费使用所有模板，只需支付托管费用</h1>
+					<p>敢为人先，起飞页支持用户网站30天无理由退款政策！</p>
+				</div>	
+			</div>
+		
+			<div class="smallHide" style="height: 55px;background-color: #666666;">
+				<ul class="package-h-ul" style="text-align: center;padding-top: 15px;">
+					<li><a href="#">托管套餐</a></li>
+					<li><a href="#">代建服务</a></li>
+					<li><a href="#">定制服务</a></li>
+					<li><a href="#">常见问题</a></li>
+				</ul>
+			</div>
+		</header>	
+		
+		<style type="text/css">
+			.part-head>img,.part-head>h3,.part-head>h3>small{
+				display: inline;
+				margin-left: 20px;
+			}
+			.part-head{
+				padding-top: 15px;
+				padding-bottom: 15px;
+				/*border: 1px solid #E2E2E2;*/
+				background-color: #EAEAEA;
+				overflow: hidden;
+			}
+			.package-part-1,.package-part-2,.package-part-3{
+				/*border: 1px solid #E2E2E2;*/
+				padding-top: 80px;
+			}
+			@media (max-width: 992px) {
+				.package-part-1{
+					padding-top: 0px;
+				}
+			}
+		</style>
+		<style type="text/css">
+			.part-body>div{
+				background-color: #FFFFFF;
+				padding: 0;
+				border-left:1px solid #E2E2E2;
+			}
+			.part-body>div:last-child{												
+				border-right:1px solid #E2E2E2;
+			}						
+			.part-body>div>div{
+				/*font-size: 13px;*/
+				padding: 20px 0px;
+				text-align: center;
+				border-bottom: 1px solid #E2E2E2;
+			}
+			div.sDiv1{
+				height: 120px;
+			}
+			div.sDiv2{
+				
+				height: 200px;
+			}
+			div.sDiv3{
+				height: 72px;
+			}
+			div.sDiv4{				
+				height: 1004px;
+			}
+			div.sDiv5{
+				height: 560px;
+			}
+			div.sDiv6{
+				height: 153px;
+			}
+			div.pTitle{
+				font-size: 16px;
+				font-weight: bold;
+			}
+			div.pPrice{
+				color: #FF7D00;
+			}
+			div.pNote{
+				color: #FF4767;
+			}
+			div.sDiv3>a{
+				padding: 5px 15px;
+			}
+			div.sDiv3>a:hover{
+				border: 1px solid #3EA3FF;
+			}
+			@media (max-width: 992px) {
+				.part-body>div:not(:last-child){
+					border-right:1px solid #E2E2E2;
+				}
+			}
+		</style>			
+		<article style="background-color: #F9F9F9;margin-top: 0;padding-bottom: 50px;">
+			<div class="container">
+				<div class="package-part-1">
+					<div class="part-head">
+						<img src="img/package-1.png" width="103px" height="103px"/>
+						<h3>1F 基础套餐
+						<small style="font-size: 14px;">起飞页为用户提供的网站模板和建站功能均为免费，我们只收取空间和服务器租用费</small>
+						</h3>
+					</div>												
+					<div class="part-body row">
+						<div class="col-md-2 col-sm-12 smallHide" style="border-top: 2px solid #B2B2B2;">
+							<div class="pTitle">套餐名称</div>
+							<div class="">适用对象</div>
+							<div class="">域名</div>
+							<div class="">支持设备</div>
+							<div class="">空间</div>
+							<div class="">流量<img src="img/package-？.png" alt="" width="15px" height="15px" /></div>
+							<div class="">邮箱</div>
+							<div class="sDiv1">商城</div>
+							<div class="">自动备份</div>
+							<div class="">技术支持</div>
+							<div class="">价格</div>
+							<div class="sDiv2">备注</div>
+							<div class="sDiv3">&nbsp</div>
+						</div>
+						<div class="col-md-2 col-sm-12" style="border-top: 2px solid #FABB01;">
+							<div class="pTitle">免费版</div>
+							<div class="">适用于简单网站或评测</div>
+							<div class="">需另购买</div>
+							<div class="">PC、平板、手机、微信</div>
+							<div class="">200M</div>
+							<div class="">1G/月</div>
+							<div class="">/</div>
+							<div class="sDiv1">/</div>
+							<div class="">/</div>
+							<div class="">邮件</div>
+							<div class="pPrice">0元/年</div>
+							<div class="sDiv2"><p>*选择海外机房可绑定域名(仅限于在起飞页购买的域名)并发布网站</p><p>*网站有起飞页底标</p></div>																										
+							<div class="sDiv3"><a href="#">购买服务</a></div>
+						</div>
+						<div class="col-md-2 col-sm-12" style="border-top: 2px solid #61B0FF;">
+							<div class="pTitle">起飞版</div>
+							<div class="">适用于个人或微型网站</div>
+							<div class="">需另购买</div>
+							<div class="">PC、平板、手机、微信</div>
+							<div class="">1G(SSD)</div>
+							<div class="">5G/月</div>
+							<div class="">/</div>
+							<div class="sDiv1">/</div>
+							<div class="">每日自动备份</div>
+							<div class="">每日自动备份</div>
+							<div class="pPrice">365元/年</div>
+							<div class="sDiv2">*可绑定国际域名</div>
+							<div class="sDiv3"><a href="#">购买服务</a></div>
+						</div>
+						<div class="col-md-2 col-sm-12" style="border-top: 2px solid #39CEAB;">
+							<div class="pTitle">翱翔版</div>
+							<div class="">适用于小型企业或机构</div>
+							<div class="">赠送国际域名</div>
+							<div class="">PC、平板、手机、微信</div>
+							<div class="">2G(SSD)</div>
+							<div class="">10G/月</div>
+							<div class="">/</div>
+							<div class="sDiv1">/</div>
+							<div class="">每日自动备份</div>
+							<div class="">邮件/QQ/电话</div>
+							<div class="pPrice">600元/年</div>
+							<div class="sDiv2 pNote"><p>一次性购买3年套餐立享95折优惠，并赠送400元代建费！</p></div>
+							<div class="sDiv3"><a href="#">购买服务</a></div>
+						</div>
+						<div class="col-md-2 col-sm-12" style="border-top: 2px solid #E9382A;">
+							<div class="pTitle">太空版</div>
+							<div class="">适用于中型企业或机构</div>
+							<div class="">赠送国际域名</div>
+							<div class="">PC、平板、手机、微信</div>
+							<div class="">4G(SSD)</div>
+							<div class="">不限</div>
+							<div class="">赠送5G邮箱1个</div>
+							<div class="sDiv1">年交易额累计不超过50万元</div>
+							<div class="">每日自动备份</div>
+							<div class="">邮件/QQ/电话</div>
+							<div class="pPrice">1200元/年</div>
+							<div class="sDiv2 pNote"><p>一次性购买3年套餐立享95折优惠，并赠送800元代建费！</p></div>
+							<div class="sDiv3"><a href="#">购买服务</a></div>
+						</div>
+						<div class="col-md-2 col-sm-12 smallHide" style="border-top: 2px solid #B2B2B2;">
+							<div class="sDiv4">
+								<img src="img/package-2.png" width="43px" height="43px" style="margin-top: 450px;"/>
+								<p>支持30日无理由退款</p>
+								<p><a href="#">查看所有套餐</a></p>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+			<div class="container">
+				<div class="package-part-2">
+					<div class="part-head">
+						<img src="img/package-3.png" width="103px" height="103px"/>
+						<h3>2F 网站代建服务
+						<small style="font-size: 14px;">由专业建站师为您量身制作网站，您仅需联系客服、购买服务、传送资料，1-2个工作日就可“坐享其成”。</small>
+						</h3>
+					</div>
+					<div class="part-body row">
+						<div class="col-md-2 col-sm-12 smallHide" style="border-top: 2px solid #B2B2B2;">
+							<div class="pTitle">套餐名称</div>
+							<div class="">页面数量</div>
+							<div class="">模板</div>
+							<div class="">素材</div>
+							<div class="">代建</div>
+							<div class="sDiv1">优惠</div>
+							<div class="pPrice">价格</div>
+							<div class="sDiv3">&nbsp;</div>
+						</div>
+						<div class="col-md-2 col-sm-12" style="border-top: 2px solid #FABB01;">
+							<div class="pTitle">微型网站代建</div>
+							<div class="">≤5个</div>
+							<div class="">您需要指定一个模板</div>
+							<div class="">您需要提供资料和图片</div>
+							<div class="">我们负责录入和设定</div>
+							<div class="sDiv1">/</div>
+							<div class="pPrice">200元</div>
+							<div class="sDiv3"><a href="#">购买服务</a></div>
+						</div>
+						<div class="col-md-2 col-sm-12" style="border-top: 2px solid #61B0FF;">
+							<div class="pTitle">小型网站代建</div>
+							<div class="">≤10个</div>
+							<div class="">您需要指定一个模板</div>
+							<div class="">您需要提供资料和图片</div>
+							<div class="">我们负责录入和设定</div>
+							<div class="sDiv1 pNote">一次购买3年翱翔版立刻就送！</div>
+							<div class="">400元</div>
+							<div class="sDiv3"><a href="#">购买服务</a></div>
+						</div>
+						<div class="col-md-2 col-sm-12" style="border-top: 2px solid #39CEAB;">
+							<div class="pTitle">中型网站代建</div>
+							<div class="">≤30个</div>
+							<div class="">您需要指定一个模板</div>
+							<div class="">您需要提供资料和图片</div>
+							<div class="">我们负责录入和设定</div>
+							<div class="sDiv1 pNote">一次购买3年太空版立刻就送！</div>
+							<div class="pPrice">800元</div>
+							<div class="sDiv3"><a href="#">购买服务</a></div>
+						</div>
+						<div class="col-md-2 col-sm-12" style="border-top: 2px solid #E9382A;">
+							<div class="pTitle">大型网站代建</div>
+							<div class="">大型网站代建</div>
+							<div class="">您需要指定一个模板</div>
+							<div class="">您需要提供资料和图片</div>
+							<div class="">我们负责录入和设定</div>
+							<div class="sDiv1">/</div>
+							<div class="pPrice">20元/页</div>
+							<div class="sDiv3"><a href="#">购买服务</a></div>
+						</div>
+						<div class="col-md-2 col-sm-12 smallHide" style="border-top: 2px solid #B2B2B2;">
+							<div class="sDiv5"><button class="packBtn" style="margin-top: 250px;">了解更多</button></div>						
+						</div>
+					</div>
+				</div> 
+			</div>
+			<div class="container">	
+				<div class="package-part-3">
+					<div class="part-head">
+						<img src="img/package-4.png" width="103px" height="103px"/>
+						<h3>3F 网站定制设计服务
+						<small style="font-size: 14px;">零风险，不满意100%全额退款承诺</small>
+						</h3>
+					</div>
+					<div class="part-body row">
+						<div class="col-xs-9 col-md-9" style="border-top: 2px solid #B2B2B2;">
+							<div  class="sDiv6">
+								如果代建服务无法满足您的需求，您可以了解一下起飞页专业设计师提供的定制设计服务！
+							</div>
+						</div>
+						<div class="col-xs-3 col-md-3" style="border-top: 2px solid #B2B2B2;">
+							<div class="sDiv6"><button class="packBtn">了解定制设计</button></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</article>
+		
+		<style type="text/css">
+			.packBtn{
+				width: 122px;
+				height: 29px;
+				border: none;
+				color:#FFFFFF;
+				background-color: #60AFFE;
+				border-radius: 15px;
+			}
+			.packBtn:hover{
+				background-color:#3EA3FF;
+			}
+			@media (max-width: 992px) {
+				.packBtn{
+					width: 98%;
+					height: 50%;
+					border: none;
+					color:#FFFFFF;
+					background-color: #60AFFE;
+					border-radius: 15px;
+				}
+				.packBtn:hover{
+					background-color:#3EA3FF;
+				}
+			}
+			.package-question,.saleConsult{
+				margin-bottom: 100px;
+			}
+			.questionDiv{
+				/*border: 1px solid black;*/
+				float: left;
+				width: 20%;
+			}
+			.questionList{
+				float: right;
+				width: 80%;
+				/*border: 1px solid black;*/
+			}
+			.questionList>div.even{
+				width: 48%;
+				float: left;
+			}
+			.questionList>div.odd{
+				width: 48%;
+				float: right;
+			}
+			@media (max-width: 992px) {
+				.questionDiv,.questionList,.questionList>div.even,.questionList>div.odd{
+					width: 100%;
+					float: none;
+				}
+			}
+		</style>
+		
+		<footer>
+			<div class="container" >							
+				<div class="package-question" style="overflow: hidden;">
+					<div class="questionDiv">
+						<h2>常见问题</h2>
+						<p>最新更新于2016/08/26</p>
+					</div>
+					<div class="questionList convenient">
+						<div class="even">
+							<h5>如果我现在选择了免费版，之后如何才能升级到收费版？</h5>
+							<p>从免费版升级到收费版是非常简单的，您只需登录之后点击网站列表中所对应网站的升级按钮，便可随时从免费版升级到收费版。</p>
+						</div>
+						
+						<div class="odd">
+							<h5>以上套餐是否包含服务器费用？</h5>
+							<p>是的。确切地说，我们只对服务器和空间收费，起飞页的模板和软件使用目前都是免费的。</p>
+						</div> <div class="clearfix"></div>
+						
+						<div class="even">
+							<h5>如果我在起飞页制作了2个或2个以上的网站，有打折吗？</h5>
+							<p>起飞页不针对特定的网站数量进行打折。但您可以通过一次性购买多年的服务获取更高的折扣，如果单个网站一次性付款3年以上，可以享受总价5%的折扣；如果一次性付款5年以上，可以享受总价10%的折扣。</p>
+						</div>
+						
+						<div class="odd">
+							<h5>必须一次支付一年的费用吗？能否按月支付？</h5>
+							<p>目前只能按年付费。为了充分保障您的权益，如果在付款的1个月内发现有任何不妥，您可以随时申请退款并停止服务（已购买域名或邮箱的费用不在此列）。</p>
+						</div>  <div class="clearfix"></div>
+						
+						<div class="even">
+							<h5>如果1年的途中我想终止网站，需要什么手续，能退款吗？</h5>
+							<p>只要在网站列表中点击终止按钮，您随时可以终止网站。我们的无理由退款期是1个月，超过1个月则不能申请退款。 退款的范围仅限于服务器租用费用，不包括购买域名的费用和无忧建站服务的费用，敬请谅解！</p>
+						</div>
+						
+						<div class="odd">
+							<h5>光速版+和光速版++为什么这么贵啊？</h5>
+							<p>光速版+和光速版++使用独立的云虚拟主机进行构建，所以价格比共享主机要高。通过使用光速版，您可以获得更高的SEO排名和更快的访问速度。</p>
+						</div>   <div class="clearfix"></div>
+						
+						<div class="even">
+							<h5>代建服务需要我整理并提供哪些资料？</h5>
+							<p>您需要先指定一款中意的模板，然后开始着手整理网站资料，资料内容包括：1. 准备网站的目录结构；2. 按照目录结构准备文字和图片内容；3. 提供您的企业LOGO、企业名称、电话、邮箱等基本信息。   当然，如果您已经有企业的宣传文档（最好是可复制粘贴的），或者老的网站，您可以直接将这些资料发送给我们，我们负责把资料内容录入进模板。</p>
+						</div>
+						
+						<div class="odd">
+							<h5>代建服务能否帮助我设计网站？</h5>
+							<p>代建服务只包含将您提供的图片和文字录入到网站模板中的服务内容。如果您的网站需要个性化的设计和定制，请联系我们的客服（下方在线客服，或电话：4006-285-729），我们会根据您的需要推荐最佳方案。</p>
+						</div>   <div class="clearfix"></div>
+						
+						<div class="even">
+							<h5>我的网站怎么备案？</h5>
+							<p>起飞页提供免费备案服务，包括ICP备案和IP备案。在证照、资料提供完整的情况下，一般的备案周期为14个工作日，我们的客服（备案专员）将全权配合您进行备案操作。（注：1. 起飞版（含）以上的套餐可申请起飞页免费备案；2. 免费版网站不支持备案；3. 仅服务器在大陆的网站需要备案，如在香港等海外服务器则无需备案。）</p>
+						</div>
+						
+						<div class="odd">
+							<h5>如果使用起飞版后觉得不够想要升级到翱翔版的话是要再交一次费用还是补完差价即可？</h5>
+							<p>从起飞版升级到翱翔版只需补齐差价即可，例如： 您购买了起飞版套餐，并使用了1个月之后升级到翱翔版，那么只需要再支付600-365×11/12=265.5元即可； 您购买了起飞版套餐，并使用了半年之后升级到翱翔版，那么只需要再支付600-365×6/12=417.5元即可。 新的套餐期限从升级之日起计算。</p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="saleConsult smallHide">
+					<hr />
+					<p style="font-size: 16px;">售前咨询</p>
+					<div class="row">
+						<div class="col-md-6" style="padding: 0;margin: 0;">
+							<p style="font-size: 22px;">QQ：800 088 546 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;电话：4006-285-729</p>
+						</div>
+						<div class="col-md-6">
+							<p style="font-size: 16px;">全方位的购买咨询&nbsp;&nbsp;&nbsp;&nbsp;精准的配置推荐&nbsp;&nbsp;&nbsp;&nbsp;灵活的价格方案&nbsp;&nbsp;&nbsp;&nbsp;1对1贴心服务</p>
+						</div>
+					</div>
+					<hr />
+				</div>
+			</div>
+			<div class="container">
+				<div class="dls">
+					<dl class="dls1 ">
+						<dt>起飞页 · 优雅做网站</dt>
+						<dd>2014年起，专注于响应式建站领域。起飞页是目前国内最专业、最领先的响应式建站
+							平台。</dd>
+						<dt style="margin: 20px 0px;">QQ客服：800088546</dt>
+						<dt>客服热线：<small>4006-285-729 / 0512-62969169</small></dt>
+						<dt>合作伙伴：</dt>
+						<dd>
+							<img src="img/合作伙伴01.png"/>
+							<img src="img/合作伙伴02.png"/>
+							<img src="img/合作伙伴03.png"/>
+							<img src="img/合作伙伴04.png"/>
+						</dd>
+					</dl>
+					<dl class="dls2 smallHide">
+						<dt>公司信息</dt>
+						<dd><a href="#">公司介绍</a></dd>
+						<dd><a href="#">服务条款</a></dd>
+						<dd><a href="#">法律声明</a></dd>
+						<dd><a href="#">可接受服务</a></dd>
+						<dd><a href="#">免责声明</a></dd>
+					</dl>
+					<dl class="dls3  smallHide">
+						<dt>技术支持</dt>
+						<dd><a href="#">联系客服</a></dd>
+						<dd><a href="#">建站教程</a></dd>
+						<dd><a href="#">更新日志</a></dd>
+						<dd><a href="#">建站商城</a></dd>
+						<dd><a href="#">博客</a></dd>
+					</dl>
+					<dl class="dls4  smallHide">
+						<dt>快速入口</dt>
+						<dd><a href="#">购买套餐和服务</a></dd>
+						<dd><a href="#">购买套餐和服务</a></dd>
+						<dd><a href="#">申请域名设定服务</a></dd>
+						<dd><a href="#">在线格式转换</a></dd>
+						<dd><a href="#">检测网站为什么打不开</a></dd>
+						<dd><a href="#">检测网站为什么打开很慢</a></dd>
+					</dl>
+					<dl class="dls5 smallHide">
+						<dt>最新资讯</dt>
+						<dd><a href="#">如何改善网站留给用户的第一印象？（上）</a></dd>
+						<dd><a href="#">多彩字体指南：让新手也能快速体验网页缤纷...</a></dd>
+						<dd><a href="#">想要做好网站设计？这10个CSS技巧怎能...</a></dd>
+						<dd><a href="#">傲娇的扁平化设计的进击之旅：与时俱进，勇...</a></dd>
+						<dd><a href="#">设计师必读！10个高性价比的线框图绘制工...</a></dd>
+					</dl>
+				</div>				
+				<hr style="margin-top: 320px;clear: both;" />
+					<p class="text-center foot-p">拓展您的业务，展示您的风采，或者只是尝试一下新的想法。 起飞页自助建站平台，拉近您与互联网的距离！</p>
+				<hr />
+					<p class="text-center foot-p">版权所有 2013-2017 苏州卡达网络科技有限公司   增值电信业务经营许可证苏B2-20150321 苏ICP备09008221号-3 版本: V3.6</p>
+			</div>
+		</footer>
+		
+		
+		<!--文档的子菜单-->
+		<div class="document">
+			<ul class="menu-ul">
+				<li class=""><a href="#">教程中心</a>
+					<ul>
+						<li><a href="#">快速入门</a></li>
+						<li><a href="#">绑定域名</a></li>
+						<li><a href="#">网页设计</a></li>
+					</ul>
+				</li>
+				<li class="menu-li">&nbsp;
+					<ul>
+						<li><a href="#">SEO相关</a></li>
+						<li><a href="#">网站备案</a></li>
+						<li><a href="#">商城在线</a></li>
+					</ul>
+				</li>
+				<li class=""><a href="#">版本更新日志</a>
+					<ul>
+						<li><a href="#">系统升级日志: V4.52</a></li>
+						<li><a href="#">系统升级日志: V4.50 ...</a></li>
+						<li><a href="#">系统升级日志: V4.49</a></li>
+						<li><a href="#">系统升级日志: V4.48</a></li>
+					</ul>
+				</li>
+				<li class=""><a href="#">建站资讯</a>
+					<ul>
+						<li><a href="#">干货分享: 几何设计学原理の...</a></li>
+						<li><a href="#">如何改善网站留给用户的第一印...</a></li>
+						<li><a href="#">如何改善网站留给用户的第一印...</a></li>
+						<li><a href="#">多彩字体指南：让新手也能快速...</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!--关于的子菜单-->
+		<div class="about ">
+			<ul class="menu-ul">
+				<li class=""><a href="#">公司信息</a>
+					<ul>
+						<li class=""><a href="#">公司介绍</a></li>
+						<li class=""><a href="#">服务条款</a></li>
+						<li class=""><a href="#">法律声明</a></li>
+						<li class=""><a href="#">可接受服务</a></li>
+						<li class=""><a href="#">免责声明</a></li>
+					</ul>
+				</li>
+				<li class=""><a href="#">荣誉资质</a>
+					<ul>
+						<li class="about-img"><a href="#"><img src="img/about1.jpg"/></a></li>
+						<li class="about-img"><a href="#"><img src="img/about2.jpg"/></a></li>
+					</ul>
+				</li>
+				<li class="menu-li">&nbsp;
+					<ul>
+						<li class="about-img"><a href="#"><img src="img/about3.jpg"/></a></li>
+						<li class="about-img"><a href="#"><img src="img/about4.jpg"/></a></li>
+					</ul>
+				</li>
+				<li class=""><a href="#">联系客服</a>
+					<ul>
+						<li class=""><a href="#">客户服务热线</a></li>
+						<li class=""><a href="#">4006-285-729</a></li>
+						<li class=""><a href="#">QQ客户中心</a></li>
+						<li class=""><a href="#">800088546</a></li>
+						<li class=""><a href="#">公司地址</a></li>
+						<li class=""><a href="#">苏州市工业园区加城大厦F4-D2</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<!--右侧悬浮菜单-->
+		<ul class="rightMenu smallHide">
+			<li class="first"><a href="#"><span style="background-position: -40px -40px;" class="QQ"></span><span class="content">在线客服</span></a></li>
+			<li class="Menu"><a href="#"><span style="background-position: -40px 0px;" class="phone"></span><span class="content">4006285729</span></a></li>
+			<li class="Menu"><a href="#"><span style="background-position: -40px -180px;" class="course"></span><span class="content">教程中心</span></a></li>
+			<li class="last"><a href="#"><span style="background-position: -40px -80px;" class="weixin"></span></a></li>
+		</ul>
+		<div class="wxDiv">	
+			<div class="wxDivImg">
+				<img src="img/weixin.jpg"/>
+				<div class="" style="color: #FFFFFF;text-align: center;padding: 10px 0px 0px 0px;">关注微信</div>
+			</div>
+			<div class="sanjiao"></div>
+		</div>
+		
+		<div class="navBox navBox2">
+			<div class="navBrand ">
+				<img src="img/logo.png" width="102px" height="33px"/>
+			</div>
+			<div class="navCenter smallHide">
+				<ul class="">
+					<li><a href="index.html">首页</a></li>				    	
+			    	<li><a href="template.html">模板</a></li>
+			    	<li><a href="package.html">套餐</a></li>
+			    	<li><a href="case.html">案例</a></li>
+			    	<li><a href="#" class="doc">文档</a></li>
+			    	<li><a href="#" class="abo">关于</a></li>		
+				</ul>
+			</div>								
+		</div>
+		
+	</body>
+</html>

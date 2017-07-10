@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>登录 | 自助建站 - 起飞页</title>
+		<link rel="icon" type="image/png" href="img/qifei.png"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/qifei.css"/>
+		<link rel="stylesheet" type="text/css" href="css/LoginRegis.css"/>
+		<script src="js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/qifei.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/loginRegis.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="slideHMenuBox">
+			<div class="slideHMenuClose"><span style="color: #FFFFFF;" class="glyphicon glyphicon-remove"></span></div>
+			<div class="slideHMenuUl">
+				<ul >
+					<li><a href="index.html">首页</a></li>				    	
+			    	<li><a href="template.html">模板</a></li>
+			    	<li><a href="package.html">套餐</a></li>
+			    	<li><a href="case.html">案例</a></li>
+			    	<li><a href="" id="doc">文档</a></li>
+			    	<li><a href="" id="abo">关于</a></li>		
+				</ul>
+			</div>
+		</div>
+		
+		<div class="slideHMenuUlSecond1">
+			<ul>
+				<li><a href="" id="goBack1">返回上一级</a></li>				    	
+		    	<li><a href="template.html">教程中心</a></li>
+		    	<li><a href="package.html">建站资讯</a></li>
+		    	<li><a href="case.html">更新日志</a></li>
+			</ul>
+		</div>
+		
+		<div class="slideHMenuUlSecond2">
+			<ul>
+				<li><a href="" id="goBack2">返回上一级</a></li>				    	
+		    	<li><a href="template.html">公司信息</a></li>
+		    	<li><a href="package.html">荣誉资质</a></li>
+		    	<li><a href="case.html">联系客服</a></li>
+			</ul>
+		</div>
+		
+		<div class="" style="padding-bottom: 100px;">
+			<div class="closeDiv smallHide">
+				<a href="index.html"><img src="img/close1.png" style="float: right;"/></a>
+				<div class="clearfix"></div>
+			</div>
+			<div class="justifyDiv smallShow">
+				<span id="justifySpan" class="glyphicon glyphicon-align-justify "></span>
+			</div>	
+			<div class="logoDiv" >
+				<img src="img/logo.png" width="159px" height="51px"/>
+				<p>从这里开启建站之旅</p>
+			</div>			
+			<div class="formDiv ResigerBox">
+				<form action="index.html" method="post">
+					<label >
+						电子邮箱 * <!--<br />-->
+						<input type="email" id="" value="" />
+					</label>
+					<span class="warnEmail">
+						
+					</span>
+					
+					<label >
+						密码  <span class="glyphicon glyphicon-info-sign"></span> * <!--<br />-->
+						<input type="password" id="" value="" />
+					</label>
+					<span class="warnpsword">
+						
+					</span>
+					
+					<label >
+						再次输入密码<!--<br />-->
+						<input type="password" id="" value="" />
+					</label>
+					<span class="warnpswordAgain">
+						
+					</span>
+					
+					<label >
+						验证问题 * <br />
+						<span style="color:#808080;">请回答: 10 + 7 等于几?</span>
+						<input type="text" id="" value="" />
+					</label>
+					<span class="warnVerify">
+						
+					</span>
+					
+					<style type="text/css">
+						
+						
+					</style>
+					
+					<hr style="margin-bottom: 0;"/>
+						<label style="font-size: 15px;">
+							<input type="checkbox" name="" id="" value=""/>
+							<p class="checkboxP">
+								我已经阅读并同意服务条款以及法律声明。我不会创建含有低俗内容及有碍社会安定内容的网站。
+							</p>
+						</label>	
+					<hr style="margin-top: 0;"/>
+					
+					<input type="submit" id="RBsub" name="" value="注册" style="display: block;width: 100%;"/>
+					<input type="button" id="RBbtn" value="已经有账号了？请登陆" style="margin:5px 0;display: block;width: 100%;"/>
+										
+					<div class="loginOther" style="margin-top: 20px;">
+						<label>其他账号登录：</label>
+						<ul class="ulSocial" id="ulSocial">
+							<li><a href="#ulSocial" style="background-position:-48px -48px;"></a></li>
+							<li><a href="#ulSocial" style="background-position:0px -48px;"></a></li>
+							<li><a href="#ulSocial" style="background-position:-240px -48px;"></a></li>
+							<li><a href="#ulSocial" style="background-position:-96px -48px;"></a></li>
+						</ul>
+					</div>
+				</form>
+			</div>
+												
+			<div class="formDiv loginBox">
+				<form action="index.html" method="post">
+					<label>
+						用户名或邮箱
+						<input type="email" id="account" value="" />
+					</label>
+					<label>
+						密码
+						<input type="password" id="passWord" name="" />
+					</label>
+					
+					<label>
+						<input type="checkbox" name="" id="remenber" value=""/>
+						<p class="checkboxP">
+							记住我（请在私人计算机上使用此功能）
+						</p>
+					</label>
+					
+					<hr />
+					<input type="submit" id="LBsub" name="" value="登录" style="display: block;width: 100%;"/>
+					<input type="button" name="" id="LBbtn" value="注册" style="margin:5px 0;display: block;width: 100%;"/>
+					<div class="loginOther" style="margin-top: 20px;">
+						<label>其他账号登录：</label>
+						<ul class="ulSocial" id="ulSocial">
+							<li><a href="#ulSocial" style="background-position:-48px -48px;"></a></li>
+							<li><a href="#ulSocial" style="background-position:0px -48px;"></a></li>
+							<li><a href="#ulSocial" style="background-position:-240px -48px;"></a></li>
+							<li><a href="#ulSocial" style="background-position:-96px -48px;"></a></li>
+						</ul>
+					</div>
+					<label style="clear: both;float: right;">忘记密码？点这里找回</label>
+				</form>
+			</div>
+		</div>
+		
+		<style type="text/css">
+			.ResigerBox{display: none;}	
+		</style>
+		<script type="text/javascript">
+			$("#RBbtn").click(function () {
+				$(".ResigerBox").css("display","none");
+				$(".loginBox").css("display","block");
+			})
+			$("#LBbtn").click(function () {
+				$(".ResigerBox").css("display","block");
+				$(".loginBox").css("display","none");
+			})
+		</script>
+		
+		<!--右侧悬浮菜单-->
+		<ul class="rightMenu smallHide">
+			<li class="first"><a href="#"><span style="background-position: -40px -40px;" class="QQ"></span><span class="content">在线客服</span></a></li>
+			<li class="Menu"><a href="#"><span style="background-position: -40px 0px;" class="phone"></span><span class="content">4006285729</span></a></li>
+			<li class="Menu"><a href="#"><span style="background-position: -40px -180px;" class="course"></span><span class="content">教程中心</span></a></li>
+			<li class="last"><a href="#"><span style="background-position: -40px -80px;" class="weixin"></span></a></li>			
+		</ul>
+		
+		<div class="wxDiv">	
+			<div class="wxDivImg">
+				<img src="img/weixin.jpg"/>
+				<div class="" style="color: #FFFFFF;text-align: center;padding: 10px 0px 0px 0px;">关注微信</div>
+			</div>
+			<div class="sanjiao"></div>
+		</div>
+						
+	</body>
+</html>

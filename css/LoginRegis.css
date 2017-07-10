@@ -1,0 +1,105 @@
+body{
+	background-color: #383838;
+}	
+.closeDiv img{
+	margin-top: 20px;
+	margin-right: 20px;
+	text-align: right;
+}
+.logoDiv{
+	/*border: 1px solid red;*/
+	margin-top: 50px;
+	text-align: center;
+}
+.logoDiv>p{
+	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 6px;
+	padding-top: 10px;
+	font-size: 12px;
+	/*border: 1px solid red;*/
+}
+.formDiv{
+	/*border:  1px solid red;*/
+	width: 390px;
+	margin: 50px auto 0 auto;
+}
+.formDiv>form{					
+	/*border:  1px solid red;*/
+}
+.formDiv label{
+	display: block;
+	color: #BABABA;
+	padding-top:10px;
+}
+.formDiv>form>label{
+	cursor: pointer;
+}
+.formDiv form input[type="email"],.formDiv form input[type="password"],.formDiv form input[type="text"]{
+	display: block;
+	width: 100%;
+	height: 32px;
+	border: 1px solid #5B5B5B;
+	background-color: transparent;
+	border-radius: 4px;
+	margin: 10px 0px;
+}
+.formDiv input[type="checkbox"]{
+	float: left;
+	width: 18px;
+	height: 18px;
+}
+.checkboxP{
+	width: 100%;
+	font-size: 16px;
+	padding-left: 30px;
+}
+.formDiv input[type="submit"]{
+	font-size:15px;
+	width: 52px;
+	height: 32px;
+	border: none;
+	border-radius: 4px;
+}
+.formDiv input[type="button"]{
+	background-color: transparent;
+	color: #FFFFFF;
+	border:1px solid #FFFFFF;
+	padding: 5px 10px;
+	border-radius: 4px;
+	float: right;
+}
+/*span[class*="warn"]{
+	color: #FFFFFF;
+	border: 1px solid #FFFFFF;
+	border-radius: 4px;
+	padding: 2px 8px;
+	font-size: 13px;
+}*/
+.loginOther>label{
+	float: left;
+	overflow: hidden;
+}
+.ulSocial{
+	float: left;
+	padding-top: 5px;							
+}
+.ulSocial>li{
+	/*width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-image:url(../img/social_icon_24x24.png);*/
+	display: inline-block;
+}
+.ulSocial>li>a{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-image:url(../img/social_icon_24x24.png);
+}
+@media (max-width: 766px) {
+	.formDiv{
+		width: 90%;
+	}
+}
